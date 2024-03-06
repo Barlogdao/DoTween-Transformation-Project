@@ -1,21 +1,18 @@
 using DG.Tweening;
 using UnityEngine;
 
-public class ScaleModule : MonoBehaviour
+public class ScaleModule : BaseModule
 {
-    [SerializeField] Vector3 _targetScale;
+    [SerializeField] private Vector3 _targetScale;
     [SerializeField] private float _duration;
 
-    [SerializeField] LoopType _loopType = LoopType.Yoyo;
-    [SerializeField] Ease _ease = Ease.Linear;
-
-    void Start()
+    private void Start()
     {
         Scale();
     }
 
     private void Scale()
     {
-        transform.DOScale(_targetScale,_duration).SetLoops(-1, _loopType).SetEase(_ease);
+        transform.DOScale(_targetScale, _duration).SetAs(InfiniteLoop);
     }
 }

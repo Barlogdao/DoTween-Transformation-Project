@@ -532,10 +532,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef0bec750974ff14ba52825a0f24a607, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _rotation: {x: 90, y: 50, z: 120}
-  _speed: 30
   _loopType: 2
   _ease: 1
+  _rotation: {x: 90, y: 120.1, z: 120}
+  _speed: 182.7
   _rotateMode: 0
 --- !u!1 &1279282618
 GameObject:
@@ -725,10 +725,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6670705587b2a32499bf11fdd743f920, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _color: {r: 1, g: 0, b: 0, a: 1}
-  _duration: 2
   _loopType: 1
   _ease: 10
+  _color: {r: 1, g: 0, b: 0, a: 1}
+  _duration: 2
 --- !u!1 &1489681815
 GameObject:
   m_ObjectHideFlags: 0
@@ -813,14 +813,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c23aec284f6687a47a12a8246a85314a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _loopType: 0
+  _ease: 1
   _text: {fileID: 1489681817}
   _message: Hello World!
   _additionalMessage: ' I Borned!'
   _scrambledMessage: You Hacked!
   _duration: 3
   _intervalDuration: 0.6
-  _loopType: 0
-  _ease: 1
   _scrambleMode: 4
 --- !u!222 &1489681819
 CanvasRenderer:
@@ -1052,10 +1052,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b2ea9e3e9c5e574db53b5305745aa24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _loopType: 1
+  _ease: 4
   _targetScale: {x: 1.7, y: 1.7, z: 1.7}
   _duration: 4
-  _loopType: 1
-  _ease: 3
 --- !u!114 &1719665736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1068,10 +1068,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef0bec750974ff14ba52825a0f24a607, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _loopType: 2
+  _ease: 3
   _rotation: {x: 0, y: 158.12, z: 0}
   _speed: 40
-  _loopType: 2
-  _ease: 1
   _rotateMode: 0
 --- !u!114 &1719665737
 MonoBehaviour:
@@ -1085,10 +1085,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4174d9b2f71185249aefc728df6ee01d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _positionOffset: {x: 15.96, y: 0, z: 0}
-  _speed: 5
   _loopType: 1
   _ease: 1
+  _positionOffset: {x: 15.96, y: 0, z: 0}
+  _speed: 5
 --- !u!1 &1737925714
 GameObject:
   m_ObjectHideFlags: 0
@@ -1207,10 +1207,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4174d9b2f71185249aefc728df6ee01d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _positionOffset: {x: -22.05, y: 0, z: 0}
-  _speed: 3
   _loopType: 1
   _ease: 1
+  _positionOffset: {x: -22.05, y: 0, z: 0}
+  _speed: 8.43
 --- !u!1 &1948456652
 GameObject:
   m_ObjectHideFlags: 0
@@ -1331,10 +1331,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b2ea9e3e9c5e574db53b5305745aa24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _loopType: 1
+  _ease: 1
   _targetScale: {x: 2, y: 2, z: 2}
   _duration: 3
-  _loopType: 1
-  _ease: 13
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

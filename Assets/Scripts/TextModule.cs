@@ -2,19 +2,18 @@ using UnityEngine;
 using DG.Tweening;
 using UnityEngine.UI;
 
-public class TextModule : MonoBehaviour
+public class TextModule : BaseModule
 {
-    [SerializeField] Text _text;
-    [Space]
+    [SerializeField] private Text _text;
+
     [SerializeField] private string _message;
     [SerializeField] private string _additionalMessage;
     [SerializeField] private string _scrambledMessage;
+
     [SerializeField] private float _duration;
     [SerializeField] private float _intervalDuration;
-    [Space]
-    [SerializeField] LoopType _loopType = LoopType.Restart;
-    [SerializeField] Ease _ease = Ease.Linear;
-    [SerializeField] ScrambleMode _scrambleMode;
+
+    [SerializeField] private ScrambleMode _scrambleMode;
 
     private void Start()
     {
@@ -35,7 +34,6 @@ public class TextModule : MonoBehaviour
             .Append(addTextTween)
             .AppendInterval(_intervalDuration)
             .Append(scrambleTextTweeen)
-            .SetLoops(-1, _loopType)
-            .SetEase(_ease);
+            .SetAs(InfiniteLoop);
     }
 }

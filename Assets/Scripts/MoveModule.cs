@@ -1,15 +1,12 @@
 using UnityEngine;
 using DG.Tweening;
 
-public class MoveModule : MonoBehaviour
+public class MoveModule : BaseModule
 {
     [SerializeField] private Vector3 _positionOffset;
-
     [SerializeField] private float _speed;
-    [SerializeField] LoopType _loopType = LoopType.Yoyo;
-    [SerializeField] Ease _ease = Ease.Linear;
 
-    void Start()
+    private void Start()
     {
         Move();
     }
@@ -17,7 +14,8 @@ public class MoveModule : MonoBehaviour
     private void Move()
     {
         Vector3 targetPosition = transform.position + _positionOffset;
-        transform.DOMove(targetPosition, _speed).SetSpeedBased().SetLoops(-1,_loopType).SetEase(_ease);
+
+        transform.DOMove(targetPosition, _speed).SetAs(InfiniteLoop).SetSpeedBased();
     }
 
     private void OnDrawGizmosSelected()
